@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="techApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Seaworld</title>
+</head>
+<body ng-controller="TechController">
+    <header>
+        <div class="marine"></div>
+        <!-- <div class="navbar"><input type="text" ng-model="searchText" placeholder="Keresés"></div> -->
+        
+    </header>
+
+
+    <div class="labelcont">
+        <div id="labeltext">Our Trips</div>
+
+
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="card-grid">
+            <div class="card" ng-repeat="tech in technologies | filter:searchText">
+                <div class="container">
+                    <div class="card-body">
+                        <div class="container2">
+                            
+                            <div class="container2">
+                                <img  src="images/{{tech.img}}.jpg" alt="{{tech.name}}">
+                                <h4>{{tech.name}}</h4>
+                                
+                            </div>
+                            <br>
+                            <br>
+                            <p>{{tech.label}}</p>
+                            <button>Tovább</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        
+    
+</body>
+<script src="app.js"></script>
+</html>
