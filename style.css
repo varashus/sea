@@ -39,9 +39,13 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    align-items: stretch;
     
 }
-
+.cardwrap{
+    display: flex;
+    
+}
 .card {
     
     display: flex;
@@ -51,7 +55,7 @@ header{
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
-    align-items: flex-end;
+    align-items: stretch;
 
 }
 

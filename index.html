@@ -26,25 +26,27 @@
 
     <div class="container">
         <div class="card-grid">
-            <div class="card" ng-repeat="tech in technologies | filter:searchText">
-                <div class="container">
-                    <div class="card-body">
-                        <div class="container2">
-                            
+            
+                <div class="card" ng-repeat="tech in technologies | filter:searchText">
+                    <div class="container">
+                        <div class="card-body">
                             <div class="container2">
-                                <img  src="images/{{tech.img}}.jpg" alt="{{tech.name}}">
-                                <h4>{{tech.name}}</h4>
                                 
-                            </div>
-                            <br>
-                            <br>
-                            <p>{{tech.label}}</p>
-                            <button>Tovább</button>
+                                <div class="container2">
+                                    <img  src="images/{{tech.img}}.jpg" alt="{{tech.name}}">
+                                    <h4>{{tech.name}}</h4>
+                                    
+                                </div>
+                                <br>
+                                <br>
+                                <p>{{tech.label}}</p>
+                                <button>Tovább</button>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </div>
 
